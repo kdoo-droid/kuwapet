@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Colors */
+  --color-mulberry: #7A2550;
+  --color-mulberry-skin: #A03668;
+  --color-mulberry-light: #C97FA0;
+  --color-oat: #F4EDE0;
+  --color-bark: #4A3828;
+  --color-leaf: #7E8F78;
+  --color-leaf-light: #9EAD99;
+  --color-dusty-rose: #C68FA2;
+  --color-warm-sand: #DCC9A8;
+  --color-sage-mist: #7E8F78;
+  --color-clay: #AA735D;
+  --color-ink: #201A17;
+  --color-dark: #1C1710;
+  --color-paper: #FEFAF3;
+  --color-line: #DCC9A8;
+  --color-success: #7E8F78;
+  --color-warning: #9A6A2F;
+
+  /* Border Radius */
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-xl: 40px;
+
+  /* Fonts */
+  --font-heading: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-manrope), system-ui, sans-serif;
+}
+
+:root {
+  --background: #FEFAF3;
+  --foreground: #201A17;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Focus styles for interactive form elements */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-mulberry);
+  outline-offset: 2px;
+  border-color: var(--color-mulberry) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
