@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { heroProduct } from "@/content/products";
 import { FaqAccordion } from "@/components/sections/FaqAccordion";
+import { AddToCart } from "@/components/sections/AddToCart";
 import { productFaqs } from "@/content/faqs";
 
 export const metadata: Metadata = {
@@ -40,23 +41,19 @@ export default function ProductPage() {
       <section className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-16 items-start">
         {/* Media Gallery */}
         <div className="sticky top-24">
-          <div className="rounded-3xl aspect-square overflow-hidden relative">
+          <div className="aspect-square relative rounded-3xl overflow-hidden">
             <Image
-              src="/images/powder-bowl.jpg"
-              alt="KuwaPet Daily Mulberry Topper — fine mulberry powder in a ceramic bowl"
+              src={product.images[0].src}
+              alt={product.images[0].alt}
               fill
-              className="object-cover"
+              className="object-contain"
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
           {/* Thumbnail row */}
           <div className="mt-4 flex gap-3">
-            {[
-              { src: "/images/powder-bowl.jpg", alt: "Product close-up" },
-              { src: "/images/leaf-harvest.jpg", alt: "Fresh mulberry leaves" },
-              { src: "/images/farm-field.jpg", alt: "Source farm" },
-            ].map((img, i) => (
+            {product.images.map((img, i) => (
               <div
                 key={img.src}
                 className="w-20 h-20 rounded-xl overflow-hidden relative"
@@ -64,7 +61,13 @@ export default function ProductPage() {
                   border: i === 0 ? "2px solid var(--color-mulberry)" : "1px solid var(--color-line)",
                 }}
               >
-                <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="80px" />
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                  sizes="80px"
+                />
               </div>
             ))}
           </div>
@@ -133,42 +136,7 @@ export default function ProductPage() {
           </ul>
 
           {/* Quantity + Add to Cart */}
-          <div className="flex gap-3 mb-5">
-            <div
-              className="flex items-center gap-3 px-4 py-3 rounded-full border"
-              style={{ borderColor: "var(--color-line)" }}
-            >
-              <button
-                className="w-6 h-6 flex items-center justify-center text-lg leading-none"
-                style={{ color: "var(--color-bark)" }}
-                aria-label="Decrease quantity"
-              >
-                −
-              </button>
-              <span
-                className="w-6 text-center text-sm font-medium"
-                style={{ color: "var(--color-ink)" }}
-              >
-                1
-              </span>
-              <button
-                className="w-6 h-6 flex items-center justify-center text-lg leading-none"
-                style={{ color: "var(--color-bark)" }}
-                aria-label="Increase quantity"
-              >
-                +
-              </button>
-            </div>
-            <button
-              className="flex-1 py-3.5 text-base font-semibold rounded-full transition-all hover:opacity-90 hover:shadow-lg"
-              style={{
-                backgroundColor: "var(--color-mulberry)",
-                color: "var(--color-oat)",
-              }}
-            >
-              Add to Cart
-            </button>
-          </div>
+          <AddToCart />
 
           <p
             className="text-xs opacity-50 mb-8"
@@ -231,9 +199,9 @@ export default function ProductPage() {
           >
             About this product
           </h2>
-          {product.longDescription.split("\n\n").map((para, i) => (
+          {product.longDescription.split("\n\n").map((para) => (
             <p
-              key={i}
+              key={para.slice(0, 40)}
               className="text-base leading-relaxed mb-4"
               style={{ color: "var(--color-bark)" }}
             >

@@ -2,6 +2,15 @@
 
 import { useState } from "react";
 
+const inputStyle: React.CSSProperties = {
+  backgroundColor: "var(--color-paper)",
+  border: "1.5px solid var(--color-line)",
+  color: "var(--color-ink)",
+  fontSize: "0.9rem",
+};
+const inputClass = "w-full px-4 py-3 rounded-xl outline-none transition-colors";
+const labelStyle: React.CSSProperties = { color: "var(--color-ink)" };
+
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
 
@@ -47,11 +56,7 @@ export function ContactForm() {
       }}
     >
       <div>
-        <label
-          htmlFor="name"
-          className="block text-sm font-medium mb-1.5"
-          style={{ color: "var(--color-ink)" }}
-        >
+        <label htmlFor="name" className="block text-sm font-medium mb-1.5" style={labelStyle}>
           Name
         </label>
         <input
@@ -60,21 +65,12 @@ export function ContactForm() {
           type="text"
           required
           placeholder="Your name"
-          className="w-full px-4 py-3 rounded-xl outline-none transition-colors"
-          style={{
-            backgroundColor: "var(--color-paper)",
-            border: "1.5px solid var(--color-line)",
-            color: "var(--color-ink)",
-            fontSize: "0.9rem",
-          }}
+          className={inputClass}
+          style={inputStyle}
         />
       </div>
       <div>
-        <label
-          htmlFor="email"
-          className="block text-sm font-medium mb-1.5"
-          style={{ color: "var(--color-ink)" }}
-        >
+        <label htmlFor="email" className="block text-sm font-medium mb-1.5" style={labelStyle}>
           Email
         </label>
         <input
@@ -83,34 +79,20 @@ export function ContactForm() {
           type="email"
           required
           placeholder="your@email.com"
-          className="w-full px-4 py-3 rounded-xl outline-none transition-colors"
-          style={{
-            backgroundColor: "var(--color-paper)",
-            border: "1.5px solid var(--color-line)",
-            color: "var(--color-ink)",
-            fontSize: "0.9rem",
-          }}
+          className={inputClass}
+          style={inputStyle}
         />
       </div>
       <div>
-        <label
-          htmlFor="subject"
-          className="block text-sm font-medium mb-1.5"
-          style={{ color: "var(--color-ink)" }}
-        >
+        <label htmlFor="subject" className="block text-sm font-medium mb-1.5" style={labelStyle}>
           Subject
         </label>
         <select
           id="subject"
           name="subject"
           required
-          className="w-full px-4 py-3 rounded-xl outline-none transition-colors appearance-none"
-          style={{
-            backgroundColor: "var(--color-paper)",
-            border: "1.5px solid var(--color-line)",
-            color: "var(--color-ink)",
-            fontSize: "0.9rem",
-          }}
+          className={`${inputClass} appearance-none`}
+          style={inputStyle}
         >
           <option value="">Select a topic</option>
           <option value="product">Product question</option>
@@ -121,11 +103,7 @@ export function ContactForm() {
         </select>
       </div>
       <div>
-        <label
-          htmlFor="message"
-          className="block text-sm font-medium mb-1.5"
-          style={{ color: "var(--color-ink)" }}
-        >
+        <label htmlFor="message" className="block text-sm font-medium mb-1.5" style={labelStyle}>
           Message
         </label>
         <textarea
@@ -134,13 +112,8 @@ export function ContactForm() {
           required
           rows={5}
           placeholder="Tell us what's on your mind."
-          className="w-full px-4 py-3 rounded-xl outline-none transition-colors resize-none"
-          style={{
-            backgroundColor: "var(--color-paper)",
-            border: "1.5px solid var(--color-line)",
-            color: "var(--color-ink)",
-            fontSize: "0.9rem",
-          }}
+          className={`${inputClass} resize-none`}
+          style={inputStyle}
         />
       </div>
       <button

@@ -5,6 +5,37 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { site } from "@/content/site";
 
+function NavLink({
+  href,
+  label,
+  active,
+  mobile = false,
+}: {
+  href: string;
+  label: string;
+  active: boolean;
+  mobile?: boolean;
+}) {
+  return (
+    <Link
+      href={href}
+      className={mobile ? "text-base py-1" : "text-sm font-medium transition-opacity hover:opacity-70 relative"}
+      style={{
+        color: active ? "var(--color-mulberry)" : "var(--color-bark)",
+        fontWeight: active ? 600 : 400,
+      }}
+    >
+      {label}
+      {!mobile && active && (
+        <span
+          className="absolute -bottom-0.5 left-0 right-0 h-px"
+          style={{ backgroundColor: "var(--color-mulberry)" }}
+        />
+      )}
+    </Link>
+  );
+}
+
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
@@ -40,28 +71,9 @@ export function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
-          {site.nav.map((item) => {
-            const active = pathname === item.href;
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-sm font-medium transition-opacity hover:opacity-70 relative"
-                style={{
-                  color: active ? "var(--color-mulberry)" : "var(--color-bark)",
-                  fontWeight: active ? 600 : 400,
-                }}
-              >
-                {item.label}
-                {active && (
-                  <span
-                    className="absolute -bottom-0.5 left-0 right-0 h-px"
-                    style={{ backgroundColor: "var(--color-mulberry)" }}
-                  />
-                )}
-              </Link>
-            );
-          })}
+          {site.nav.map((item) => (
+            <NavLink key={item.href} href={item.href} label={item.label} active={pathname === item.href} />
+          ))}
         </nav>
 
         {/* Desktop CTA */}
@@ -109,22 +121,9 @@ export function Header() {
         }}
       >
         <div className="px-6 py-5 flex flex-col gap-4">
-          {site.nav.map((item) => {
-            const active = pathname === item.href;
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-base py-1"
-                style={{
-                  color: active ? "var(--color-mulberry)" : "var(--color-bark)",
-                  fontWeight: active ? 600 : 400,
-                }}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
+          {site.nav.map((item) => (
+            <NavLink key={item.href} href={item.href} label={item.label} active={pathname === item.href} mobile />
+          ))}
           <Link
             href="/shop"
             className="mt-1 px-5 py-3 text-sm font-semibold rounded-full text-center"

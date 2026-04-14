@@ -10,7 +10,7 @@ export const faqs: FAQ[] = [
     id: "what-is-it",
     question: "What exactly is KuwaPet Mulberry Topper?",
     answer:
-      "It's a fine powder you sprinkle directly onto your dog's regular meal. The hero ingredient is mulberry — chosen for its clean profile and simple story. Think of it as a thoughtful daily addition, not a complicated supplement routine.",
+      "It's a fine powder made from 100% Food-Grade Japanese Mulberry Leaf that you sprinkle onto your dog's regular meal before or during feeding. One clean ingredient — naturally containing DNJ, polyphenols, flavonoids, and dietary fiber. Think of it as a simple daily addition, not a complicated supplement routine.",
     category: "product",
   },
   {
@@ -31,21 +31,21 @@ export const faqs: FAQ[] = [
     id: "how-much",
     question: "How much should I use per serving?",
     answer:
-      "[Feeding directions by dog size — TBD before launch. We will update this with exact serving guidelines once finalized.]",
+      "Dosage is based on your dog's weight. Small dogs (11–25 lb): 1–2 scoops daily. Medium dogs (26–50 lb): 2–4 scoops daily. Large dogs (51–75 lb): 4–5 scoops daily. XL dogs (76+ lb): 5–6 scoops daily. Administer before or during meals. Each tub is a 90-day supply at recommended use.",
     category: "usage",
   },
   {
     id: "shelf-life",
-    question: "What's the shelf life?",
+    question: "What's the shelf life and how should I store it?",
     answer:
-      "[Storage and shelf life details — TBD before launch. Store in a cool, dry place and seal the bag after each use.]",
+      "Store in a cool, dry place and keep the container tightly closed after each use. As with all food-based products, avoid moisture and direct sunlight.",
     category: "product",
   },
   {
     id: "ingredients-full",
     question: "What's in it — full ingredient list?",
     answer:
-      "[Full ingredient statement — TBD before launch. The product is currently in formulation finalization. We'll publish the complete ingredient list before we ship.]",
+      "100% Food-Grade Japanese Mulberry Leaf Powder. Naturally contains 1-Deoxynojirimycin (DNJ), polyphenols, flavonoids, and dietary fiber. No additives, no fillers — matcha-grade quality.",
     category: "product",
   },
   {

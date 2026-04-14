@@ -64,12 +64,12 @@ export default function ShopPage() {
             >
               {/* Image */}
               <Link href={`/product/${product.slug}`}>
-                <div className="aspect-square relative overflow-hidden cursor-pointer">
+                <div className="aspect-square relative overflow-hidden rounded-t-3xl cursor-pointer">
                   <Image
-                    src="/images/powder-bowl.jpg"
-                    alt={product.name}
+                    src={product.images[0].src}
+                    alt={product.images[0].alt}
                     fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="object-contain transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
                 </div>

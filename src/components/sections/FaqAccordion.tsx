@@ -26,7 +26,7 @@ export function FaqAccordion({ faqs }: { faqs: FAQ[] }) {
             >
               <span
                 className="text-base font-medium leading-snug"
-                style={{ fontFamily: "var(--font-heading)", color: "var(--color-ink)" }}
+                style={{ fontFamily: "var(--font-heading)" }}
               >
                 {faq.question}
               </span>

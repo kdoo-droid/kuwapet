@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "KuwaPet is a dog wellness brand built on the belief that better mealtime rituals don't need to be complicated. Learn the story behind the brand.",
+    "KuwaPet is the first companion animal application of the KuwaUSA metabolic regulation system. Learn the story behind the brand.",
 };
 
 export default function AboutPage() {
@@ -52,41 +52,38 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ── BRAND STORY ── */}
+      {/* BRAND STORY */}
       <section className="py-20 px-6 max-w-3xl mx-auto">
         <div className="space-y-6">
           <p
             className="text-xl leading-relaxed"
-            style={{
-              color: "var(--color-ink)",
-              fontWeight: 500,
-            }}
+            style={{ color: "var(--color-ink)", fontWeight: 500 }}
           >
-            The pet aisle felt overwhelming. That&apos;s where KuwaPet started.
+            KuwaPet is the first companion animal application of the KuwaUSA metabolic regulation system.
           </p>
           <p
             className="text-base leading-relaxed"
             style={{ color: "var(--color-bark)" }}
           >
-            Not with a breakthrough discovery or a dramatic founding story. Just a simple frustration: too many products, too many claims, and not enough brands willing to keep it honest.
+            KuwaUSA developed a structured approach to metabolic support built around premium Japanese mulberry leaf — a real food ingredient naturally containing DNJ (1-Deoxynojirimycin), polyphenols, flavonoids, and dietary fiber. KuwaPet applies that system specifically for dogs.
           </p>
           <p
             className="text-base leading-relaxed"
             style={{ color: "var(--color-bark)" }}
           >
-            The goal was to start with something simpler. One ingredient. One clear purpose. A daily ritual that actually fit into real dog-owner life without adding complexity.
+            The insight behind KuwaPet is straightforward: metabolic support is most effective at the time of feeding. By designing a product that integrates directly into your dog&apos;s mealtime routine, KuwaPet supports the body&apos;s natural metabolic response during digestion — when it matters most.
           </p>
           <p
             className="text-base leading-relaxed"
             style={{ color: "var(--color-bark)" }}
           >
-            Mulberry became that starting point. A clean fruit. A legible story. A product that could stand on its ingredient label alone.
+            One clean ingredient. One daily routine. A product that stands on its label alone — no jargon, no inflated claims.
           </p>
           <p
             className="text-base leading-relaxed"
             style={{ color: "var(--color-bark)" }}
           >
-            KuwaPet was built to make daily dog care feel more thoughtful and less confusing. That&apos;s still the whole idea.
+            KuwaPet represents the first step in a broader metabolic health platform. The same system is being expanded to human applications, establishing a unified approach to metabolic regulation across species.
           </p>
         </div>
       </section>
@@ -142,23 +139,23 @@ export default function AboutPage() {
             {[
               {
                 icon: "✦",
-                title: "Simplicity",
-                body: "Clear ingredients. Clear instructions. Clear design. We believe less is easier to trust.",
+                title: "One Clean Ingredient",
+                body: "100% Food-Grade Japanese Mulberry Leaf Powder. No additives, no fillers, no blends. A label you can read in ten seconds.",
               },
               {
                 icon: "◎",
-                title: "Honesty",
-                body: "We don't make claims we can't back up. We don't invent urgency. We let the product speak for itself.",
+                title: "Science-Grounded",
+                body: "DNJ is a naturally occurring compound in mulberry leaf studied for its role in supporting healthy glucose metabolism. We chose this ingredient because the story is real.",
               },
               {
                 icon: "⊛",
-                title: "Intentional Wellness",
-                body: "Wellness-forward without the pseudoscience. Measured language, thoughtful routines, confidence without hype.",
+                title: "Meal-Timed by Design",
+                body: "KuwaPet is formulated to be given before or during meals — because metabolic support is most effective at the time of feeding.",
               },
               {
                 icon: "◈",
-                title: "Ritual",
-                body: "Small daily rituals are a form of care. We're here to make that easier — one bowl at a time.",
+                title: "Built to Last",
+                body: "KuwaPet is the first application of the KuwaUSA metabolic regulation system — a platform designed to expand to human health applications using the same core approach.",
               },
             ].map((v) => (
               <div

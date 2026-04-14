@@ -24,43 +24,44 @@ export const products: Product[] = [
     id: "kuwapet-mulberry-topper",
     slug: "kuwapet-mulberry-topper",
     name: "KuwaPet Daily Mulberry Topper",
-    subtitle: "A simple topper made for dogs.",
+    subtitle: "Japanese Premium Mulberry Leaf — Daily Support at Every Meal",
     shortDescription:
-      "Sprinkle it on. That's all it takes. Our mulberry topper is a single-ingredient daily addition designed to make your dog's regular meal feel more intentional.",
+      "A premium mulberry leaf topper made for dogs. Sprinkle before or during meals as part of your dog's daily feeding routine. One clean ingredient — 100% Food-Grade Japanese Mulberry Leaf Powder.",
     longDescription:
-      "KuwaPet started with one question: why is the pet supplement aisle so overwhelming? We wanted something simpler. One thoughtfully chosen ingredient. A format that fits any bowl. A brand you can actually trust.\n\nThe KuwaPet Daily Mulberry Topper is a fine powder you sprinkle over your dog's regular food. It's easy, it's clean, and it's a small ritual that makes feeding feel more intentional — every day.",
+      "KuwaPet starts with one question: why is the pet supplement aisle so overwhelming? We went the other direction — one thoughtfully chosen ingredient, kept simple.\n\nThe KuwaPet Daily Mulberry Topper is 100% Food-Grade Japanese Mulberry Leaf Powder, naturally containing DNJ (1-Deoxynojirimycin), polyphenols, flavonoids, and dietary fiber. Add it before or during your dog's regular meal. That's the whole routine.\n\nMatcha-grade quality. No additives, no fillers. Made in the USA.",
     price: "[PRICE_TBD]", // Replace before launch
     compareAtPrice: null,
     images: [
       {
-        src: "/images/product-main.jpg",
-        alt: "KuwaPet Daily Mulberry Topper — product bag on oat cream surface",
+        src: "/images/product-main.png",
+        alt: "KuwaPet Daily Mulberry Topper — 200g tub of Japanese Premium Mulberry Leaf Powder",
       },
       {
-        src: "/images/product-in-bowl.jpg",
-        alt: "Mulberry powder sprinkled over dog food in a ceramic bowl",
+        src: "/images/powder-bowl.jpg",
+        alt: "Mulberry powder in a ceramic bowl",
       },
       {
-        src: "/images/product-lifestyle.jpg",
-        alt: "Dog eating from bowl with KuwaPet topper added",
+        src: "/images/leaf-harvest.jpg",
+        alt: "Fresh mulberry leaves from the farm",
       },
     ],
     highlights: [
-      "Single hero ingredient — mulberry powder",
-      "Easy to sprinkle onto any meal",
-      "No fillers, no complicated blends",
-      "Made for dogs",
-      "Daily ritual — simple enough to actually stick to",
+      "100% Food-Grade Japanese Mulberry Leaf Powder",
+      "Naturally contains DNJ, polyphenols, flavonoids & dietary fiber",
+      "Easy to sprinkle before or during meals — no prep needed",
+      "No additives, no fillers — matcha-grade quality",
+      "Made in USA · 200g · 90-day supply",
     ],
-    ingredients: "[Full ingredient statement — TBD before launch]",
+    ingredients:
+      "100% Food-Grade Japanese Mulberry Leaf Powder. Key components: 1-Deoxynojirimycin (DNJ), polyphenols, flavonoids, dietary fiber. No additives. No fillers.",
     feedingDirections:
-      "[Feeding directions by dog size — TBD before launch]",
-    storageInstructions: "[Storage instructions — TBD before launch]",
+      "Administer before or during meals. Small Dogs (11–25 lb): 10–15 lb — 1 scoop (250 mg); 15–25 lb — 2 scoops (500 mg). Medium Dogs (26–50 lb): 26–35 lb — 2–3 scoops (500–750 mg); 36–50 lb — 3–4 scoops (750–1,000 mg). Large Dogs (51–75 lb): 4–5 scoops (1,000–1,250 mg). XL Dogs (76+ lb): 5–6 scoops (1,250–1,500 mg). Consistent daily use is recommended.",
+    storageInstructions: "Store in a cool, dry place. Keep container tightly closed.",
     shippingNote: "Ships within the United States. Free shipping on qualifying orders.",
     faqIds: ["what-is-it", "is-it-safe", "how-to-use", "how-much", "shelf-life"],
     ctaLabel: "Add to Cart",
     inventoryStatus: "in_stock",
-    netWeight: "[Net weight — TBD before launch]",
+    netWeight: "200g (7.05 oz) — 90-day supply",
   },
 ];
 

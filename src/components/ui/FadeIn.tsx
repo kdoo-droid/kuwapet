@@ -2,6 +2,12 @@
 
 import { useInView } from "@/hooks/useInView";
 
+const TRANSLATE: Record<"up" | "left" | "none", string> = {
+  up: "translateY(22px)",
+  left: "translateX(-16px)",
+  none: "none",
+};
+
 interface FadeInProps {
   children: React.ReactNode;
   delay?: number;        // ms
@@ -17,21 +23,15 @@ export function FadeIn({
 }: FadeInProps) {
   const { ref, inView } = useInView();
 
-  const translate = {
-    up: "translateY(22px)",
-    left: "translateX(-16px)",
-    none: "none",
-  };
-
   return (
     <div
       ref={ref}
       className={className}
       style={{
         opacity: inView ? 1 : 0,
-        transform: inView ? "none" : translate[direction],
+        transform: inView ? "none" : TRANSLATE[direction],
         transition: `opacity 0.65s ease ${delay}ms, transform 0.65s ease ${delay}ms`,
-        willChange: "opacity, transform",
+        willChange: inView ? "auto" : "opacity, transform",
       }}
     >
       {children}

@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 
 export function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
-  // Start visible if JS hasn't run yet — avoids flash of invisible content
   const [inView, setInView] = useState(false);
 
   useEffect(() => {

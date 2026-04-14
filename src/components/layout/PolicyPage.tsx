@@ -69,9 +69,9 @@ export function PolicyPage({ eyebrow, title, intro, lastUpdated, sections }: Pol
               </h2>
               {Array.isArray(section.body) ? (
                 <ul className="space-y-2">
-                  {section.body.map((item, i) => (
+                  {section.body.map((item) => (
                     <li
-                      key={i}
+                      key={item.slice(0, 40)}
                       className="text-sm leading-relaxed flex gap-2"
                       style={{ color: "var(--color-bark)" }}
                     >

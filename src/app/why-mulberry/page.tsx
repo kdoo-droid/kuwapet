@@ -5,36 +5,36 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Why Mulberry",
   description:
-    "Why did KuwaPet choose mulberry as our hero ingredient? Learn the simple, honest story behind our mulberry powder topper for dogs.",
+    "Why did KuwaPet choose Japanese mulberry leaf? Learn how DNJ, polyphenols, and flavonoids make it a clean daily topper for dogs.",
 };
 
 const reasons = [
   {
     number: "01",
-    title: "It's a real fruit dogs can eat.",
-    body: "Mulberry is a dog-safe fruit. Not a complex extract. Not a patented compound with a branded name. A genuine fruit — one you could describe in a single sentence.",
+    title: "It naturally contains DNJ.",
+    body: "Mulberry leaf contains 1-Deoxynojirimycin (DNJ), a naturally occurring compound studied for its role in supporting healthy glucose metabolism. It's the reason we chose this ingredient — not because it's trendy, but because the story is real.",
   },
   {
     number: "02",
     title: "The ingredient story is clean.",
-    body: "We wanted to build a brand around one thing rather than twelve. Mulberry gave us a starting point that was honest, recognizable, and hard to over-spin.",
+    body: "100% Food-Grade Japanese Mulberry Leaf Powder. No extracts. No blends. No branded compounds. One ingredient you can describe in a single sentence — and read off the label in seconds.",
   },
   {
     number: "03",
-    title: "It fits a daily ritual naturally.",
-    body: "A fine powder you sprinkle on food. Simple preparation. Simple routine. That's what we were looking for.",
+    title: "Timing with meals makes it work.",
+    body: "Metabolic support is most effective at the time of feeding. KuwaPet is designed to be added before or during your dog's meal — so it integrates directly into the body's natural digestive response.",
   },
   {
     number: "04",
-    title: "It's different — in a good way.",
-    body: "Walk the pet aisle and you'll see the same handful of ingredients recycled across every product. Mulberry is genuinely distinct, without feeling forced or trendy.",
+    title: "It's genuinely different.",
+    body: "Walk the pet aisle and you'll see the same handful of ingredients recycled across every product. Japanese Premium Mulberry Leaf stands apart — matcha-grade quality, real food origin, and a substantive reason to be there.",
   },
 ];
 
 export default function WhyMulberryPage() {
   return (
     <>
-      {/* ── HERO — dark with farm background ── */}
+      {/* HERO */}
       <section
         className="relative overflow-hidden min-h-[70vh] flex items-end pb-20"
         style={{ backgroundColor: "var(--color-dark)" }}
@@ -52,7 +52,7 @@ export default function WhyMulberryPage() {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to bottom, rgba(28,23,16,0.3) 0%, rgba(28,23,16,0.85) 100%)",
+                "linear-gradient(to bottom, rgba(28,23,16,0.3) 0%, rgba(28,23,16,0.88) 100%)",
             }}
           />
         </div>
@@ -76,12 +76,12 @@ export default function WhyMulberryPage() {
             className="mt-5 text-lg md:text-xl leading-relaxed max-w-xl mx-auto"
             style={{ color: "rgba(244,237,224,0.75)" }}
           >
-            Because we wanted to start with something real. One fruit. One story. One honest daily addition to your dog&apos;s bowl.
+            Because we wanted to start with something real. One fruit. One honest daily addition to your dog&apos;s bowl — backed by a compound worth knowing about.
           </p>
         </div>
       </section>
 
-      {/* ── WHAT IS MULBERRY — split ── */}
+      {/* HOW IT WORKS */}
       <section className="py-24 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <div className="rounded-3xl overflow-hidden aspect-square relative">
           <Image
@@ -93,34 +93,40 @@ export default function WhyMulberryPage() {
           />
         </div>
         <div>
+          <p
+            className="text-xs font-semibold uppercase tracking-widest mb-4"
+            style={{ color: "var(--color-mulberry)" }}
+          >
+            How it works
+          </p>
           <h2
             className="text-3xl md:text-4xl font-semibold mb-6 leading-tight"
             style={{ fontFamily: "var(--font-heading)", color: "var(--color-ink)" }}
           >
-            What is mulberry, exactly?
+            Mulberry leaf contains DNJ — a compound that works at mealtime.
           </h2>
           <p
             className="text-base leading-relaxed mb-4"
             style={{ color: "var(--color-bark)" }}
           >
-            Mulberry is a fruit from the Morus tree — cultivated for thousands of years across Asia, Europe, and North America. It&apos;s the same plant behind mulberry silk, mulberry teas, and centuries of culinary tradition.
+            Mulberry leaf naturally contains 1-Deoxynojirimycin (DNJ), a compound studied for its role in supporting healthy glucose metabolism. When added before or during meals, it supports the body&apos;s natural metabolic response during digestion.
           </p>
           <p
             className="text-base leading-relaxed mb-4"
             style={{ color: "var(--color-bark)" }}
           >
-            In its dried, powdered form, mulberry becomes a versatile ingredient — one with a naturally mild flavor and a simple, legible food identity.
+            It also contains polyphenols, flavonoids, and dietary fiber — naturally occurring components that contribute to its clean nutritional profile.
           </p>
           <p
             className="text-base leading-relaxed"
             style={{ color: "var(--color-bark)" }}
           >
-            It&apos;s dog-safe. It&apos;s real food. It&apos;s something you can actually explain without a disclaimer.
+            This isn&apos;t a complex extract or a lab-assembled blend. It&apos;s a single food-grade ingredient — Japanese Premium Mulberry Leaf Powder — doing what it naturally does.
           </p>
         </div>
       </section>
 
-      {/* ── POWDER CLOSE-UP — full-width dark panel ── */}
+      {/* POWDER CLOSE-UP — dark panel */}
       <section
         className="relative overflow-hidden"
         style={{ backgroundColor: "var(--color-dark)" }}
@@ -147,26 +153,26 @@ export default function WhyMulberryPage() {
                 className="text-3xl md:text-4xl font-semibold mb-5 leading-tight"
                 style={{ fontFamily: "var(--font-heading)", color: "var(--color-oat)" }}
               >
-                Ground mulberry. Nothing else.
+                100% Mulberry Leaf. Nothing else.
               </h2>
               <p
                 className="text-base leading-relaxed mb-4"
                 style={{ color: "rgba(244,237,224,0.7)" }}
               >
-                The powder form makes it easy — sprinkle on any food, mix gently, done. No strong taste to compete with your dog&apos;s regular meal. Just a clean, fine addition.
+                Premium Japanese Mulberry Leaf ground into a fine powder — matcha-grade quality with no additives and no fillers. The format makes it simple: sprinkle before or during your dog&apos;s meal, mix gently, done.
               </p>
               <p
                 className="text-base leading-relaxed"
                 style={{ color: "rgba(244,237,224,0.7)" }}
               >
-                Simple format for a simple daily habit.
+                Consistent daily use is how it works. One clean addition, every meal.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── FOUR REASONS — light section ── */}
+      {/* FOUR REASONS */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
@@ -211,7 +217,72 @@ export default function WhyMulberryPage() {
         </div>
       </section>
 
-      {/* ── FARM STORY STRIP ── */}
+      {/* KEY BENEFITS */}
+      <section
+        className="py-24 px-6"
+        style={{ backgroundColor: "var(--color-dark)" }}
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <p
+              className="text-xs font-semibold uppercase tracking-widest mb-3"
+              style={{ color: "var(--color-mulberry-light)" }}
+            >
+              Key benefits
+            </p>
+            <h2
+              className="text-4xl md:text-5xl"
+              style={{ fontFamily: "var(--font-heading)", color: "var(--color-oat)", fontWeight: 600 }}
+            >
+              What daily use supports.
+            </h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              {
+                title: "Healthy glucose metabolism",
+                body: "DNJ is studied for its role in supporting how the body handles glucose — a process that happens with every meal.",
+              },
+              {
+                title: "Balanced energy levels",
+                body: "Supporting healthy metabolic function helps maintain steady energy throughout the day.",
+              },
+              {
+                title: "Daily metabolic support",
+                body: "Metabolic balance is built through consistent daily habits, not single events. KuwaPet is designed for exactly that.",
+              },
+              {
+                title: "Easy feeding integration",
+                body: "No separate routine. No preparation. Add it to the bowl before or during your dog's regular meal — and that's it.",
+              },
+            ].map((item, i) => (
+              <div
+                key={item.title}
+                className="rounded-2xl p-7"
+                style={{
+                  backgroundColor: "rgba(255,255,255,0.04)",
+                  border: "1px solid rgba(244,237,224,0.1)",
+                }}
+              >
+                <h3
+                  className="text-lg font-semibold mb-3"
+                  style={{ fontFamily: "var(--font-heading)", color: "var(--color-oat)" }}
+                >
+                  {item.title}
+                </h3>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ color: "rgba(244,237,224,0.6)" }}
+                >
+                  {item.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA STRIP */}
       <section
         className="relative overflow-hidden py-24 px-6"
         style={{ backgroundColor: "var(--color-oat)" }}
@@ -222,19 +293,19 @@ export default function WhyMulberryPage() {
               className="text-3xl md:text-4xl mb-6"
               style={{ fontFamily: "var(--font-heading)", color: "var(--color-ink)", fontWeight: 600 }}
             >
-              We believe in starting small and doing it right.
+              One ingredient. A whole daily system.
             </h2>
             <p
               className="text-base leading-relaxed mb-4"
               style={{ color: "var(--color-bark)" }}
             >
-              The pet supplement aisle is full of products trying to claim everything. We set out to build something different — a brand that trusts its customers enough to keep it simple.
+              KuwaPet turns a single, clean ingredient into a structured daily addition — designed to support your dog&apos;s metabolic health at the moment it matters most: every meal.
             </p>
             <p
               className="text-base leading-relaxed mb-8"
               style={{ color: "var(--color-bark)" }}
             >
-              Mulberry is where KuwaPet starts. More ingredients, more products, more rituals — those will come in time. But they&apos;ll all start from the same place: honesty first.
+              200g. 90-day supply. Made in the USA.
             </p>
             <Link
               href="/shop"
@@ -247,12 +318,12 @@ export default function WhyMulberryPage() {
               Shop KuwaPet
             </Link>
           </div>
-          <div className="rounded-3xl overflow-hidden aspect-square relative">
+          <div className="aspect-square relative rounded-3xl overflow-hidden">
             <Image
-              src="/images/farm-field.jpg"
-              alt="Mulberry farm field at golden hour"
+              src="/images/product-main.png"
+              alt="KuwaPet Daily Mulberry Topper — 200g tub"
               fill
-              className="object-cover"
+              className="object-contain"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
